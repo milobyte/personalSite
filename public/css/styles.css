@@ -1,0 +1,20 @@
+.section-dark{
+  background-color: #191A19;
+  color: white;
+}
+.section-dark-green{
+  background-color: #1E5128;
+  color: white;
+}
+.section-green{
+  background-color: #4E9F3D;
+  color: white;
+}
+.section-light-green{
+  background-color: #D8E9A8;
+  color: black;
+}
+
+.round-img{
+  border-radius: 50%;
+}
