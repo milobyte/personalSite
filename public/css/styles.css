@@ -1,6 +1,23 @@
+h1, h2, h3{
+  /* IMPORTANT for removing white space between divs */
+  margin: 0;
+  padding: 0;
+}
+
+.body-content{
+  font-size: 0;
+  display: block;
+}
+
+.intro{
+  margin: 20%;
+  text-align: center;
+}
+
 .about-me{
   background-color: #191A19;
   color: white;
+  text-align: center;
 }
 .experience{
   background-color: #1E5128;
