@@ -2,25 +2,55 @@ h1, h2, h3{
   /* IMPORTANT for removing white space between divs */
   margin: 0;
   padding: 0;
+  font-family: 'Redressed', cursive;
 }
+
+p{
+  color:white;
+  font-size: 16px;
+}
+
+.retro-font{
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* .circle-img{
+  border-radius: 50%;
+  width: 70%;
+  /* float: left; */
+
 
 .body-content{
   font-size: 0;
   display: block;
+  background-color: #191A19;
 }
 
 .intro{
-  margin: 20%;
+  padding: 25%;
   text-align: center;
+  color: white;
+  background-color: #191A19;
+  font-family: 'Redressed', cursive;
+}
+
+.monkey-img{
+  width: 5%;
+  position: fixed;
 }
 
 .about-me{
   background-color: #191A19;
   color: white;
   text-align: center;
+  display: inline-block;
 }
 .experience{
   background-color: #1E5128;
+  color: white;
+}
+.joke-section{
+  background-color: #139487;
   color: white;
 }
 .contact-me{
