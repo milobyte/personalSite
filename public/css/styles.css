@@ -6,8 +6,8 @@ h1, h2, h3{
 }
 
 p{
-  color:white;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 
 .retro-font{
@@ -21,7 +21,6 @@ p{
 
 
 .body-content{
-  font-size: 0;
   display: block;
   background-color: #191A19;
 }
@@ -48,8 +47,9 @@ p{
 .experience{
   background-color: #1E5128;
   color: white;
+  padding: 2%
 }
-.joke-section{
+.game-section{
   background-color: #139487;
   color: white;
 }
@@ -59,6 +59,9 @@ p{
 }
 .footer-section{
   background-color: #D8E9A8;
+}
+
+p.footer-section{
   color: black;
 }
 
