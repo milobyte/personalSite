@@ -43,14 +43,28 @@ p{
   color: white;
   text-align: center;
   display: inline-block;
+  padding: 5%;
 }
 .experience{
-  background-color: #1E5128;
+  background-color: #191A19;
   color: white;
   padding: 2%
 }
+
+.list-group-custom .list-group-item {
+  color: #fff;
+  background-color: #191A19;
+  border-top: 1px solid #fff;
+  border-left-color: #191A19;
+  border-right-color: #191A19;
+}
+
+.list-group-custom .list-group-item:hover {
+  background-color: #1E5128;
+}
+
 .game-section{
-  background-color: #139487;
+  background-color: #1E5128;
   color: white;
 }
 .contact-me{
