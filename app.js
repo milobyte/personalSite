@@ -10,7 +10,10 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res){
   res.render("home", {
-    currJoke: "Click the joke button for a joke!"
+    currJoke: "Click the joke button for a joke!",
+    gameStatus:"Perhaps you'd like to try your luck?:",
+    die1: "images/dice6.png",
+    die2: "images/dice6.png"
   });
 });
 
@@ -24,28 +27,38 @@ app.post('/newJoke', function(req, res){
       //console.log(jokeData);
       const newJoke = jokeData.joke;
       res.render("home", {
-        currJoke: newJoke
+        currJoke: newJoke,
+        gameStatus:"Perhaps you'd like to try your luck?:",
+        die1: "images/dice6.png",
+        die2: "images/dice6.png"
       })
     })
   });
 })
 
+app.post('/rolledDie', function(req, res){
 
-// SUBMIT BUTTON FUNCTIONALITY
-// var randomVariable1 = Math.floor(Math.random() * 6) + 1;
-// var randomVariable2 = Math.floor(Math.random() * 6) + 1;
-// document.querySelector(".img1").setAttribute("src", "images/dice" + randomVariable1 + ".png");
-// document.querySelector(".img2").setAttribute("src", "images/dice" + randomVariable2 + ".png");
-//
-// if (randomVariable1 > randomVariable2) {
-//   document.querySelector("h1").innerHTML = "Player 1 Wins!";
-// }
-// else if (randomVariable2 > randomVariable1) {
-//   document.querySelector("h1").innerHTML = "Player 2 Wins!";
-// }
-// else {
-//   document.querySelector("h1").innerHTML = "Draw!";
-// }
+  var randomVariable1 = Math.floor(Math.random() * 6) + 1;
+  var randomVariable2 = Math.floor(Math.random() * 6) + 1;
+  var newGameStatus = "";
+
+  if (randomVariable1 > randomVariable2) {
+    newGameStatus = "You Win!"
+  }
+  else if (randomVariable2 > randomVariable1) {
+    newGameStatus = "You Lost..."
+  }
+  else {
+    newGameStatus = "Draw!"
+  }
+  res.render("home", {
+    currJoke: "Click the joke button for a joke!",
+    gameStatus:newGameStatus,
+    die1: "images/dice" + randomVariable1 + ".png",
+    die2: "images/dice" + randomVariable2 + ".png"
+  });
+
+})
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
