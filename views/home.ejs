@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Miles Stanley</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico">
-  <!-- CSS and Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&family=Press+Start+2P&family=Redressed&display=swap" rel="stylesheet">
-</head>
+<%- include("partials/header") -%>
 
 <body>
   <img class="monkey-img" src="images/monkey.png" alt="Missing Monkey">
@@ -205,78 +189,9 @@
 
     </div>
   </div>
-  <div class="game-section" id="game-section">
-    <div class="container-fluid">
-      <div class="text-center p-5">
-        <!-- JOKE API Implementation -->
-        <h2>Wanna hear a joke?:</h2>
-        <form class="p-3" action="/newJoke" method="post">
-          <button class="btn btn-dark" type="submit">Let's hear a joke!</button>
-        </form>
-        <h2>--------------</h2>
-        <h3><%= currJoke %></h1>
-        <h2>--------------</h2>
-        <h5>@JOKEAPI</h5>
-      </div>
-    </div>
 
-    <!-- Simple Dice Game -->
-    <div class="container-fluid">
-      <form class="" action="/rolledDie" method="post">
-        <div class="row text-center p-5">
-          <h2><%= gameStatus %></h2>
-          <div class="dice col-md-6">
-            <p>Player 1</p>
-            <img class="img1" src="<%= die1 %>">
-          </div>
-          <div class="dice col-md-6">
-            <p>Player 2</p>
-            <img class="img1" src="<%= die2 %>">
-          </div>
-          <div class="p-2">
-            <button class="btn btn-outline-dark" type="submit" name="button">🎲</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+<%- include("partials/games") -%>
+<%- include("partials/bottom") -%>
 
-  <div class="contact-me" id="contact-me">
-    <div class="container-fluid">
-      <div class="row text-center">
-        <h2>Contact</h2>
-        <h3 class="pb-5">I'd Love to Connect with You!</h3>
-        <div class="col-4">
-          <h1>🖃</h1>
-          <h3>Feel free to send me an email at:</h3>
-          <h4>aMilesStanley@gmail.com</h4>
-        </div>
-        <div class="col-4">
-          <h1>🕽</h1>
-          <h3>Or give me a call (I'll do my best to get back to you ASAP):</h3>
-          <h4>(828)-320-1897</h4>
-        </div>
-        <div class="col-4">
-          <h1>🖹</h1>
-          <h3>And here's my <a href="https://drive.google.com/file/d/1yeFB35YcnI0joGkkoLIbQrCeSDNtSo-z/"><strong>resume</strong></a>.</h3>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer-section" id="footer-section">
-    <div class="container-fluid">
-      <div class="row text-center pt-3">
-        <a class="col-md-6 p-3" href="https://www.linkedin.com/in/miles-stanley-406ab3191/"><img src="images/LI-Logo.png" style="height: 60px;" /></a>
-        <a class="col-md-6 p-3" href="https://github.com/milobyte"><img src="images/GitHub_Logo.png" style="height: 60px;" /></a>
-        <p>©2022 MILES STANLEY</p>
-      </div>
-    </div>
-  </footer>
-
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
-
 </html>

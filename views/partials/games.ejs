@@ -1,0 +1,35 @@
+<div class="game-section" id="game-section">
+  <div class="container-fluid">
+    <div class="text-center p-5">
+      <!-- JOKE API Implementation -->
+      <h2>Wanna hear a joke?:</h2>
+      <form class="p-3" action="/newJoke" method="post">
+        <button class="btn btn-dark" type="submit">Let's hear a joke!</button>
+      </form>
+      <h2>--------------</h2>
+      <h3><%= currJoke %></h1>
+      <h2>--------------</h2>
+      <h5>@JOKEAPI</h5>
+    </div>
+  </div>
+
+  <!-- Simple Dice Game -->
+  <div class="container-fluid">
+    <form class="" action="/rolledDie" method="post">
+      <div class="row text-center p-5">
+        <h2><%= gameStatus %></h2>
+        <div class="dice col-md-6">
+          <p>Player 1</p>
+          <img class="img1" src="<%= die1 %>">
+        </div>
+        <div class="dice col-md-6">
+          <p>Player 2</p>
+          <img class="img1" src="<%= die2 %>">
+        </div>
+        <div class="p-2">
+          <button class="btn btn-outline-dark" type="submit" name="button">🎲</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
