@@ -7,7 +7,7 @@
         <button class="btn btn-dark" type="submit">Let's hear a joke!</button>
       </form>
       <h2>--------------</h2>
-      <h3><%= currJoke %></h1>
+      <h3><%= currJoke %></h3>
       <h2>--------------</h2>
       <h5>@JOKEAPI</h5>
     </div>
@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <form class="" action="/rolledDie" method="post">
       <div class="row text-center p-5">
-        <h2><%= gameStatus %></h2>
+        <h2 class="retro-font"><%= gameStatus %></h2>
         <div class="dice col-md-6">
           <p>Player 1</p>
           <img class="img1" src="<%= die1 %>">

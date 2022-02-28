@@ -2,12 +2,11 @@ h1, h2, h3{
   /* IMPORTANT for removing white space between divs */
   margin: 0;
   padding: 0;
-  font-family: 'Redressed', cursive;
 }
 
 p{
   font-size: 18px;
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .retro-font{
@@ -48,7 +47,8 @@ p{
 .experience{
   background-color: #191A19;
   color: white;
-  padding: 2%
+  padding: 2%;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .list-group-custom .list-group-item {
@@ -71,6 +71,7 @@ p{
   padding: 14%;
   background-color: #4E9F3D;
   color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 .footer-section{
   background-color: #D8E9A8;
