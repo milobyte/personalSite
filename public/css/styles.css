@@ -66,9 +66,10 @@ p{
 .game-section{
   background-color: #1E5128;
   color: white;
+  padding: 5%
 }
 .contact-me{
-  padding: 14%;
+  padding: 15%;
   background-color: #4E9F3D;
   color: white;
   font-family: 'Quicksand', sans-serif;
